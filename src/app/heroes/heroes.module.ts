@@ -10,6 +10,7 @@ import { HeroesRoutingRoutingModule } from './heroes-routing-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material/material.module';
 import { HeroeTargetaComponent } from './components/heroe-targeta/heroe-targeta.component';
+import { ImagenPipe } from './pipes/imagen.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeroeTargetaComponent } from './components/heroe-targeta/heroe-targeta.
     HeroeComponent,
     HomeComponent,
     ListadoComponent,
-    HeroeTargetaComponent
+    HeroeTargetaComponent,
+    ImagenPipe
   ],
   imports: [
     CommonModule,

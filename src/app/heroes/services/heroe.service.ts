@@ -7,9 +7,14 @@ import { HeroeInterface } from '../interfaces/heroes.interfaces';
 })
 export class HeroeService {
 
+
+
   constructor(private http: HttpClient) { }
 
   getHeroes() {
     return this.http.get<HeroeInterface[]>('http://localhost:3000/heroes')
+  }
+  getHeroePorId(id: string) {
+    return this.http.get<HeroeInterface>(`http://localhost:3000/heroes/${id}`)
   }
 }
