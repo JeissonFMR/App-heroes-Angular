@@ -12,6 +12,7 @@ import { MaterialModule } from '../material/material.module';
 import { HeroeTargetaComponent } from './components/heroe-targeta/heroe-targeta.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
 import { FormsModule } from '@angular/forms';
+import { ConfirmarEliminacionComponent } from './components/confirmar-eliminacion/confirmar-eliminacion.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ListadoComponent,
     HeroeTargetaComponent,
-    ImagenPipe
+    ImagenPipe,
+    ConfirmarEliminacionComponent
   ],
   imports: [
     CommonModule,
